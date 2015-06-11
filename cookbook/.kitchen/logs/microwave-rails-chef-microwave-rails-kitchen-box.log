@@ -1,0 +1,39 @@
+I, [2015-06-10T17:28:49.258998 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: -----> Verifying <microwave-rails-chef-microwave-rails-kitchen-box>...
+I, [2015-06-10T17:28:49.259606 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Preparing files for transfer
+I, [2015-06-10T17:28:49.682792 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: -----> Busser installation detected (busser)
+I, [2015-06-10T17:28:49.683561 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Installing Busser plugins: busser-serverspec
+I, [2015-06-10T17:28:58.235522 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Plugin serverspec already installed
+I, [2015-06-10T17:28:58.446715 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Removing /tmp/verifier/suites/serverspec
+I, [2015-06-10T17:28:58.454938 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Transferring files to <microwave-rails-chef-microwave-rails-kitchen-box>
+I, [2015-06-10T17:28:58.660811 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: -----> Running serverspec test suite
+I, [2015-06-10T17:28:58.742544 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.2.2/lib:/tmp/verifier/gems/gems/rspec-core-3.2.3/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+I, [2015-06-10T17:28:59.055593 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: 
+I, [2015-06-10T17:28:59.055885 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Package "ruby"
+I, [2015-06-10T17:28:59.171057 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: [32m  should be installed[0m
+I, [2015-06-10T17:28:59.171122 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: 
+I, [2015-06-10T17:28:59.171421 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Command "ruby -v"
+I, [2015-06-10T17:28:59.171529 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: 
+I, [2015-06-10T17:28:59.204172 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: [32m    should match "2.2.2"[0m
+I, [2015-06-10T17:28:59.204530 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: 
+I, [2015-06-10T17:28:59.204922 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Command "which bundle"
+I, [2015-06-10T17:28:59.205333 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box:   stdout
+I, [2015-06-10T17:28:59.212660 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: [32m    should match "/opt/rbenv/shims/bundle"[0m
+I, [2015-06-10T17:28:59.212904 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: 
+I, [2015-06-10T17:28:59.213212 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Command "cd #{MICROWAVE_HOME} && bundle install"
+I, [2015-06-10T17:28:59.213502 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box:   exit_status
+I, [2015-06-10T17:28:59.218887 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: [32m    should eq 0[0m
+I, [2015-06-10T17:28:59.219119 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: 
+I, [2015-06-10T17:28:59.219336 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Service "postgresql"
+I, [2015-06-10T17:28:59.317666 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: [32m  should be running[0m
+I, [2015-06-10T17:28:59.317940 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: 
+I, [2015-06-10T17:28:59.318214 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Command "cd #{MICROWAVE_HOME} && bundle exec rake db:create db:migrate"
+I, [2015-06-10T17:28:59.318468 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box:   exit_status
+I, [2015-06-10T17:28:59.324913 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: [32m    should eq 0[0m
+I, [2015-06-10T17:28:59.324989 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: 
+I, [2015-06-10T17:28:59.325014 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Package "nodejs"
+I, [2015-06-10T17:28:59.338832 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: [32m  should be installed[0m
+I, [2015-06-10T17:28:59.339133 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: 
+I, [2015-06-10T17:28:59.339379 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Finished in 0.28394 seconds (files took 0.28361 seconds to load)
+I, [2015-06-10T17:28:59.339661 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: [32m7 examples, 0 failures[0m
+I, [2015-06-10T17:28:59.339801 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: 
+I, [2015-06-10T17:28:59.370952 #26618]  INFO -- microwave-rails-chef-microwave-rails-kitchen-box: Finished verifying <microwave-rails-chef-microwave-rails-kitchen-box> (0m10.11s).

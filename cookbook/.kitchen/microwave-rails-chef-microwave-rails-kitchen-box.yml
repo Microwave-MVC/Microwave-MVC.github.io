@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+port: '2222'
+username: vagrant
+ssh_key: "/Users/varoske/Desktop/microwave-rails-chef/cookbook/.kitchen/kitchen-vagrant/kitchen-cookbook-microwave-rails-chef-microwave-rails-kitchen-box/.vagrant/machines/default/virtualbox/private_key"
+last_action: verify

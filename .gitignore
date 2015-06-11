@@ -1,0 +1,9 @@
+ /.bundle
+.kitchen/                   
+.vagrant/
+cookbook/.kitchen/
+
+*/log/*
+!/log/.keep                 
+*/tmp
+.DS_Store
